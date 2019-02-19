@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6edf4"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="2dp"
+        android:id="@+id/cardnew">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rlreport"
+            android:padding="20dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ivimg"
+                android:src="@drawable/statusnew"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvrnv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:text="Report new vehicle"
+                android:layout_toRightOf="@+id/ivimg"
+                android:textColor="#000000"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Tap to report a vehicle"
+                android:layout_below="@+id/tvrnv"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/ivimg"
+                android:textColor="#34495E"
+                android:textSize="12dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent Complaints"
+        android:id="@+id/tvrecent"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_below="@+id/cardnew"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="8dp"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvrecent"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center|center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No data available"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
